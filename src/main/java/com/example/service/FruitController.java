@@ -23,8 +23,6 @@ public class FruitController {
     @GetMapping
     public String home(Model model) {
 
-        // TODO: Add tracing here
-
         model.addAttribute("fruits", fruits);     // For the List view
         model.addAttribute("fruitForm", new Fruit()); // For the Form
         return "home";
